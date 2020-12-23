@@ -11,6 +11,11 @@ class UsersController < ApplicationController
     User.create(user_params)
   end
 
+  def destroy
+    user = User.fing(params[:id])
+    user.destroy
+  end
+
   private
   def user_params
     params.require(:user).permit(:name, :age)
