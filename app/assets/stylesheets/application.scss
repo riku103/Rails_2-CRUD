@@ -37,3 +37,12 @@ body {
   max-width: var(--breakpoint-lg);
   padding: 30px 15px;
 }
+
+th,
+td {
+  vertical-align: middle !important;
+}
+
+.break-word {
+  word-break: break-word;
+}
